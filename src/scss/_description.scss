@@ -1,0 +1,18 @@
+.description {
+	min-height: 339px;
+	text-align: center;
+	background: $color-porcelain;
+
+	&__title {
+		padding-top: 75px;
+		font-size: 40px;
+		line-height: 40px;
+	}
+
+	&__text {
+		padding-top: 22px;
+		font-size: 20px;
+		line-height: 32px;
+		color: $color-dusty-gray;
+	}
+}
