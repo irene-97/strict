@@ -19,6 +19,26 @@ $sprites: (
 			total_height: 194,
 		),
 	),
+	"link": (
+		normal: (
+			x: 51,
+			y: 59,
+			width: 14,
+			height: 14,
+			image: "sprites.png",
+			total_width: 88,
+			total_height: 97,
+		),
+		retina: (
+			x: 102,
+			y: 118,
+			width: 28,
+			height: 28,
+			image: "sprites@2x.png",
+			total_width: 176,
+			total_height: 194,
+		),
+	),
 	"megaphone": (
 		normal: (
 			x: 44,
@@ -54,6 +74,26 @@ $sprites: (
 			y: 90,
 			width: 64,
 			height: 104,
+			image: "sprites@2x.png",
+			total_width: 176,
+			total_height: 194,
+		),
+	),
+	"plus": (
+		normal: (
+			x: 34,
+			y: 59,
+			width: 15,
+			height: 15,
+			image: "sprites.png",
+			total_width: 88,
+			total_height: 97,
+		),
+		retina: (
+			x: 68,
+			y: 118,
+			width: 30,
+			height: 30,
 			image: "sprites@2x.png",
 			total_width: 176,
 			total_height: 194,
