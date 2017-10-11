@@ -1,4 +1,25 @@
-$sprites: ();
+$sprites: (
+	"arrow-header": (
+		normal: (
+			x: 0,
+			y: 0,
+			width: 20,
+			height: 12,
+			image: "sprites.png",
+			total_width: 20,
+			total_height: 12,
+		),
+		retina: (
+			x: 0,
+			y: 0,
+			width: 40,
+			height: 24,
+			image: "sprites@2x.png",
+			total_width: 40,
+			total_height: 24,
+		),
+	),
+);
 
 @each $name in map-keys($sprites) {
 	.sprite-#{$name} {
