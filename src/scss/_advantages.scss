@@ -1,0 +1,67 @@
+.advantages {
+	padding-bottom: 66px;
+
+	.container {
+		text-align: center;
+	}
+
+	&__advantage {
+		display: inline-block;
+		margin: 65px 58px 0;
+		width: 260px;
+		text-align: center;
+
+		&__icon {
+			position: relative;
+			margin: 0 auto;
+			width: 100px;
+			height: 100px;
+			background: url("../images/blue-bg.jpg");
+
+			&::before {
+				content: "";
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				transition: transform 0.2s ease;
+			}
+
+			&--phone {
+				&::before {
+					@include sprite("phone");
+				}
+			}
+
+			&--telegram {
+				&::before {
+					@include sprite("telegram");
+				}
+			}
+
+			&--megaphone {
+				&::before {
+					@include sprite("megaphone");
+				}
+			}
+		}
+
+		&__title {
+			margin-top: 30px;
+			margin-bottom: 17px;
+			font-size: 22px;
+			line-height: 22px;
+		}
+
+		&__text {
+		}
+
+		&:hover {
+			.advantages__advantage__icon {
+				&::before {
+					transform: translate(-50%, -50%) scale(1.1);
+				}
+			}
+		}
+	}
+}
