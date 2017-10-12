@@ -36,6 +36,18 @@
 			height: 62px;
 			color: $color-white;
 			background: transparent;
+
+			@media (max-width: 600px) {
+				width: 432px;
+			}
+
+			@media (max-width: 480px) {
+				width: 362px;
+			}
+
+			@media (max-width: 400px) {
+				width: 264px;
+			}
 		}
 
 		&__message {
@@ -49,6 +61,18 @@
 			color: $color-white;
 			background: transparent;
 			resize: none;
+
+			@media (max-width: 600px) {
+				width: 432px;
+			}
+
+			@media (max-width: 480px) {
+				width: 362px;
+			}
+
+			@media (max-width: 400px) {
+				width: 264px;
+			}
 		}
 
 		&__checkbox {
@@ -120,6 +144,23 @@
 			&:hover {
 				background: darken($color-dodger-blue, 8%);
 			}
+
+			@media (max-width: 410px) {
+				right: 65px;
+				bottom: 5px;
+			}
+		}
+
+		@media (max-width: 600px) {
+			width: 432px;
+		}
+
+		@media (max-width: 480px) {
+			width: 362px;
+		}
+
+		@media (max-width: 400px) {
+			width: 264px;
 		}
 	}
 }
