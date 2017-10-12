@@ -44,14 +44,15 @@
 		}
 
 		&__plus {
-			position: relative;
-			display: inline-block;
-			margin-top: 109px;
-			margin-right: 10px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-left: -26px;
 			border: solid 1px $color-white;
 			border-radius: 3px;
 			width: 42px;
 			height: 42px;
+			transform: translate(-50%, -50%);
 
 			&::before {
 				@include sprite("plus");
@@ -65,13 +66,15 @@
 		}
 
 		&__link {
-			position: relative;
-			display: inline-block;
-			margin-top: 109px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-left: 26px;
 			border: solid 1px $color-white;
 			border-radius: 3px;
 			width: 42px;
 			height: 42px;
+			transform: translate(-50%, -50%);
 
 			&::before {
 				@include sprite("link");
@@ -88,6 +91,14 @@
 			.works__work__overlay {
 				opacity: 0.9;
 			}
+		}
+
+		@media (max-width: 920px) {
+			width: calc(#{percentage(1 / 2)} - 30px);
+		}
+
+		@media (max-width: 500px) {
+			width: calc(#{percentage(1 / 1)} - 30px);
 		}
 	}
 }
