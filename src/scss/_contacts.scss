@@ -107,13 +107,19 @@
 			position: absolute;
 			right: 0;
 			bottom: 62px;
+			outline: none;
 			border: none;
+			border-radius: 5px;
 			padding: 0 52px;
 			height: 47px;
 			font-size: 18px;
 			line-height: 25px;
 			color: $color-white;
 			background: $color-dodger-blue;
+
+			&:hover {
+				background: darken($color-dodger-blue, 8%);
+			}
 		}
 	}
 }
