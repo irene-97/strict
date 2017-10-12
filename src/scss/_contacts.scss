@@ -1,0 +1,119 @@
+.contacts {
+	padding-bottom: 48px;
+	text-align: center;
+	background: url("../images/contacts.jpg") center no-repeat;
+	background-size: cover;
+
+	&__title {
+		padding-top: 67px;
+		font-size: 41px;
+		line-height: 41px;
+		color: $color-white;
+	}
+
+	&__text {
+		padding-top: 17px;
+		font-size: 15px;
+		line-height: 21px;
+		color: $color-dusty-gray;
+	}
+
+	&__form {
+		position: relative;
+		margin: 0 auto;
+		padding-top: 50px;
+		padding-bottom: 110px;
+		width: 554px;
+
+		&__name,
+		&__email {
+			display: block;
+			margin: 0 auto 20px;
+			border: solid 1px $color-dusty-gray;
+			border-radius: 4px;
+			padding: 15px;
+			width: 554px;
+			height: 62px;
+			color: $color-white;
+			background: transparent;
+		}
+
+		&__message {
+			display: block;
+			margin: 0 auto 20px;
+			border: solid 1px $color-dusty-gray;
+			border-radius: 4px;
+			padding: 15px;
+			width: 554px;
+			height: 161px;
+			color: $color-white;
+			background: transparent;
+			resize: none;
+		}
+
+		&__checkbox {
+			position: absolute;
+			left: 0;
+			bottom: 73px;
+			display: inline-block;
+
+			input {
+				overflow: hidden;
+				width: 0;
+				opacity: 0;
+			}
+
+			&__mark {
+				position: relative;
+				display: inline-block;
+				vertical-align: middle;
+				border-radius: 4px;
+				width: 18px;
+				height: 18px;
+				background: $color-dusty-gray;
+
+				&::before {
+					content: "";
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					display: block;
+					border-radius: 4px;
+					width: 13px;
+					height: 13px;
+					background: $color-black;
+					opacity: 0;
+					transform: translate(-50%, -50%);
+					transition: opacity 0.2s ease;
+				}
+			}
+
+			input:checked ~ &__mark {
+				&::before {
+					opacity: 1;
+				}
+			}
+
+			// stylelint-disable-next-line order/order
+			&__text {
+				padding-left: 15px;
+				font-size: 15px;
+				line-height: 25px;
+				color: $color-white;
+			}
+		}
+
+		&__submit {
+			position: absolute;
+			right: 0;
+			bottom: 62px;
+			border: none;
+			padding: 0 52px;
+			height: 47px;
+			font-size: 18px;
+			line-height: 25px;
+			color: $color-white;
+			background: $color-dodger-blue;
+		}
+	}
+}
